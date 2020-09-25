@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+	<engine:ScrollView name="configuratorContent">
+		<engine:VisualElement name="agentInfoHorizontal" class="horizontalGroup">
+			<engine:VisualElement name="agentInfo" class="verticalGroup">
+				<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+				<engine:TextField name="gameObjectName" label="Name" binding-path="m_Name" tooltip="The name of the GameObject the PuppeteerAgent component is attached to."/>
+				<pui:ArchetypeSelectorField name="archetypeSelector" label="Used Archetype" 
+																		tooltip="Defines which archetype this agent will use and therefore which goals, actions, and sensors this agent will run."/>
+				<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+			</engine:VisualElement>
+			<engine:VisualElement name="prefabIconContainer">
+				<engine:VisualElement name="prefabIconFrame" />
+			</engine:VisualElement>
+		</engine:VisualElement>
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<engine:Label class="contentHeaderText" text="Working Memory" />
+		<engine:VisualElement name="workingMemoryContainer" class="worldStateItem rounded" tooltip="The working memory defines what the agent currently knows about its environment."/>
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<engine:VisualElement name="planner">
+			<engine:Label class="contentHeaderText" text="Current Plan" />
+			<engine:Button name ="openVisualiser" class="addButton" text="Open PlanVisualiser" tooltip="Open the PlanVisualiser for the currently selected agent." />
+		</engine:VisualElement>
+		<engine:VisualElement name="planContainer" class="worldStateItem rounded" />
+	</engine:ScrollView>
+</engine:UXML>

@@ -1,0 +1,89 @@
+.root {
+	background-color: var(--dark, fuchsia);
+	flex-direction: column;
+	flex: auto;
+}
+
+TextElement {
+	color: var(--textLight);
+}
+
+.verticalSpacer {
+	flex-grow: 0;
+	flex-shrink: 1;
+	height: 20px;
+}
+
+.panelDragger {
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: 2px;
+	height: 100%;
+	background-color: var(--darkest);
+}
+
+	.panelDragger:hover {
+		background-color: var(--hover);
+	}
+
+.verticalGroup {
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.defaultButton {
+	flex-shrink: 0;
+	align-self: center;
+	padding: 6px 10px 6px 10px;
+	margin: 10px;
+}
+
+.horizontalGroup {
+	flex-direction: row;
+	flex-grow: 1;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.visualSplitter {
+	flex: auto;
+	flex-direction: row;
+}
+
+.footer {
+	flex-grow: 0;
+	flex-shrink: 0;
+	justify-content: center;
+	align-content: center;
+	height: 20px;
+	padding: 2px 2px 2px 10px;
+}
+
+#version {
+	align-self: flex-start;
+}
+
+.topRounded {
+	border-radius: 5px 5px 0px 0px;
+}
+
+.scrollView {
+	flex: auto;
+	width: 100%;
+	background-color: var(--light, fuchsia);
+}
+
+
+.darkBackground {
+	background-color: var(--dark, fuchsia);
+}
+
+.lightBackground {
+	background-color: var(--light, fuchsia);
+}
+
+.darkestBackground {
+	background-color: var(--darkest, fuchsia);
+}

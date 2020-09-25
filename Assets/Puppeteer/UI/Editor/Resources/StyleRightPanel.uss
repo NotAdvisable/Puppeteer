@@ -1,0 +1,221 @@
+﻿.rightPanel {
+	flex: auto;
+	flex-grow: 1;
+	min-width: 50%;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background-color: var(--emptyBackground, fuchsia);
+}
+
+.rightPanelContent {
+	min-width: 100%;
+	min-height: 100%;
+	padding: 0px;
+	width: 0;
+}
+
+#configuratorContent {
+	padding: 20px 20px 40px 20px;
+}
+
+.warningText {
+	font-size: 12px;
+}
+
+#GUIDLabel {
+	position: absolute;
+	align-self: center;
+	bottom: 10px;
+}
+
+#agentInfoHorizontal {
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+#agentInfo {
+	flex-grow: 1;
+}
+
+	#agentInfo > .unity-base-field {
+		min-width: 100%;
+		margin: 3px 3px 7px 3px;
+		flex-grow: 0;
+		max-width: 100%;
+	}
+
+#prefabIconContainer {
+	flex-shrink: 0;
+	padding: 3px 20px 20px 3px;
+}
+
+#prefabIconFrame {
+	width: 180px;
+	height: 180px;
+	background-color: var(--prefabIconBackground, fuchsia);
+	border-color: var(--darkest);
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border-width: 2px;
+}
+
+.prefabIcon {
+	background-color: var(--prefabIconBackground, fuchsia);
+}
+
+.horizontalDividerWithSpace {
+	flex-grow: 0;
+	flex-shrink: 0;
+	height: 2px;
+	width: 100%;
+	margin: 20px 0px 20px 0px;
+	background-color: var(--darkest, fuchsia);
+}
+
+.rounded {
+	border-radius: 5px;
+}
+
+.worldStateItem {
+	padding: 9px;
+	background-color: var(--light, fuchsia);
+	border-color: var(--darkest);
+	border-width: 2px;
+	margin-bottom: 10px;
+}
+
+	.worldStateItem > * {
+		margin: 3px 0px 3px 0px;
+	}
+
+.desiredValue {
+	margin-left: 10px;
+}
+
+	.desiredValue > Label {
+		min-width: 140px;
+	}
+
+.contentHeaderText {
+	margin-bottom: 10px;
+	flex-shrink: 0;
+	max-width: 100px;
+}
+
+.noLeftMargin {
+	margin-left: 0px;
+}
+
+.selectedWorldStateItem {
+	border-color: var(--active);
+}
+
+.addButton {
+	align-self: flex-end;
+	position: absolute;
+	margin-bottom: 9px;
+	padding: 0px 10px 0px 10px;
+	right: 9px;
+	border-width: 0px;
+}
+
+#openVisualiser {
+	height: 20px;
+	top: -4px;
+}
+
+#utilityCreator {
+	margin-top: 10px;
+}
+
+.archetypeContent {
+	margin: 0px 5px 5px 5px;
+	min-width: 110px;
+	height: 100%;
+}
+
+	.archetypeContent > Label {
+		padding-left: 10px;
+	}
+
+.archetypeScroller {
+	background-color: var(--light, fuchsia);
+	border-color: var(--darkest);
+	border-width: 1px;
+}
+
+.listItem:hover {
+	background-color: var(--hover, fuchsia);
+}
+
+	.listItem:hover .listItemText {
+		color: var(--dark, fuchsia);
+	}
+
+.listItem {
+	width: auto;
+	min-height: 30px;
+	justify-content: center;
+	padding: 5px 10px 5px 10px;
+	border-bottom-width: 1px;
+	border-color: var(--listBorderRegular);
+}
+
+.headerText {
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	flex-shrink: 0;
+}
+
+.related {
+	border-color: var(--related);
+}
+
+.selected {
+	background-color: var(--dark, fuchsia);
+	border-color: var(--active);
+}
+
+	.selected:hover {
+		background-color: var(--active, fuchsia);
+	}
+
+.searchPopup {
+	padding-top: 6px;
+	border-color: var(--darkest);
+	border-width: 1px;
+}
+
+	.searchPopup > .searchPopupSearchField {
+		margin-bottom: 6px;
+	}
+
+.workingMemoryItem {
+	justify-content: space-between;
+}
+
+.workingMemoryKey {
+	margin-left: 10px;
+}
+
+.workingMemoryValue {
+	margin-right: 10px;
+}
+
+.planItem > Image{
+	width: 16px;
+	height: 14px;
+	padding-right: 2px;
+}
+
+.activeAction {
+	color: var(--highlight, fuchsia);
+}
+
+.activeGoal {
+	color: var(--highlight, fuchsia);
+}

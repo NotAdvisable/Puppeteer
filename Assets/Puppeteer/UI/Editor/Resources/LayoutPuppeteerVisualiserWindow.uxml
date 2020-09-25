@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+
+	<engine:VisualElement class="infoBox rounded">
+		<engine:Image class="textLogo" />
+		<engine:Label text="The planner creates the plan from goal to start." />
+		<engine:Image class="arrowImage" name="leftRight"/>
+		<engine:Label text="The agent executes the plan from start to goal." />
+		<engine:Image class="arrowImage" name="rightLeft"/>
+	</engine:VisualElement>
+	<engine:VisualElement class="footer darkestBackground">
+		<engine:TextElement name="version" />
+	</engine:VisualElement>
+</engine:UXML>

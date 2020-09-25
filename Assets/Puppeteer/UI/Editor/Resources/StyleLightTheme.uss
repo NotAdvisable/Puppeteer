@@ -1,0 +1,66 @@
+﻿:root {
+	--light: #c2c2c2;
+	--dark: #a5a5a5;
+	--darkest: #8a8a8a;
+	--emptyBackground: #aaaaaa;
+	--button: #C4C4C4;
+	--listBorderRegular: #8a8a8a;
+	--hover: #54a0ff;
+	--active: #2e86de;
+	--listItemHover: #282828;
+}
+
+.rightPanelContent {
+	--darkest: #8a8a8a;
+}
+
+.worldStateItem {
+	--light: #c2c2c2;
+	--hover: #54a0ff;
+	--active: #2e86de;
+}
+
+.archetypeScroller {
+	--listBorderRegular: #8a8a8a;
+	--light: #c2c2c2;
+	--dark: #a5a5a5;
+	--darkest: #8a8a8a;
+	--hover: #54a0ff;
+	--active: #2e86de;
+	--related: #01a3a4;
+}
+
+.searchPopup {
+	--listBorderRegular: #8a8a8a;
+	--light: #c2c2c2;
+	--dark: #a5a5a5;
+	--darkest: #8a8a8a;
+	--hover: #54a0ff;
+	--active: #2e86de;
+}
+
+.prefabIcon {
+	--prefabIconBackground: #6c6c6c;
+}
+
+#prefabIconFrame {
+	--prefabIconBackground: #6c6c6c;
+	--darkest: #8a8a8a;
+}
+
+.activeAction {
+	--highlight: #10ac84;
+}
+
+.activeGoal {
+	--highlight: #feca57;
+}
+
+.agentInspectorDivider {
+	--dark: #a5a5a5;
+}
+
+.inspectorWorldStateItem {
+	--dark: #a5a5a5;
+	--border: #5D5D5D;
+}

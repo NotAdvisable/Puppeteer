@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+	<engine:ScrollView name="configuratorContent">
+		<engine:TextField name="displayName" class="noLeftMargin" label="Display Name" max-length="30" 
+											tooltip="Choose a descriptive name that will be displayed to represent this goal." />
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<engine:VisualElement name="goalPartCreator">
+			<engine:Label class="contentHeaderText" text="Partial Goals" tooltip="A goal may contain many partial goals that it wants to fulfil and needs at least one to work." />
+			<engine:Button name ="addButton" class="addButton" text="+" tooltip="Add new partial goal." />
+		</engine:VisualElement>
+		<engine:VisualElement name="goalParts" />
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<editor:FloatField name="baseUtility" class="noLeftMargin" label="Base Utility" 
+											 tooltip="The utility of a goal describes how much the AI wants to fulfil it in comparison to other goals." />
+		<engine:VisualElement name="utilityCreator">
+			<engine:Label  name="worldStateUtilityHeader" class="contentHeaderText" text="Working Memory Utility"
+										 tooltip="Define curves that will be evaluated based on the agents working memory and affect the overall utility of the goal. The world state values are casted to float." />
+			<engine:Button name ="addUtilityButton" class="addButton" text="+" tooltip="Add new world state utility." />
+		</engine:VisualElement>
+		<engine:VisualElement name="utilityParts" />
+	</engine:ScrollView>
+</engine:UXML>

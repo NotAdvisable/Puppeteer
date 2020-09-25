@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+	<engine:ScrollView name="configuratorContent">
+		<engine:TextField name="displayName" class="noLeftMargin" label="Display Name" max-length="30" 
+											tooltip="Choose a descriptive name that will be displayed to represent this sensor." />
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<pui:ExecutableSensorField name="executableSensor" label="Executable Sensor"
+															 tooltip="Refers to the sensor that will be executed. Any sensor that inherits from PuppeteerExecutableSensor may be chosen."/>
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<engine:TextField name="managedWorldState" label="Managed World State" tooltip="The world state this sensor manages." />
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<engine:Toggle name="shouldBeTicked" label="Should be Ticked" tooltip="This flag defines if the sensor will be ticked by the system or not."/>
+		<editor:IntegerField name ="executionOrder" label="Execution Order" tooltip="Defines in which order the sensors will be updated." />
+		<editor:IntegerField name ="tickRate" label="Tick Rate" tooltip="Defines how frequent this sensor will be updated." />
+	</engine:ScrollView>
+</engine:UXML>

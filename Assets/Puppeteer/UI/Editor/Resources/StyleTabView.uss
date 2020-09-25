@@ -1,0 +1,45 @@
+﻿.puppeteerTabView {
+	background-color: var(--dark, fuchsia);
+	flex-direction: row;
+	margin-top: 5px;
+}
+
+.textLogo {
+	flex-shrink: 0;
+	-unity-background-scale-mode: scale-to-fit;
+	min-width: 111px;
+	min-height: 32px;
+	right: 10px;
+	top: -5px;
+	align-self: flex-end;
+	position: absolute;
+}
+
+
+.puppeteerTab {
+	background-color: var(--dark, fuchsia);
+	border-width: 1px;
+	border-color: var(--dark);
+	padding: 5px;
+	min-height: 30px;
+}
+
+	.puppeteerTab:hover {
+		background-color: var(--hover, fuchsia);
+	}
+
+		.puppeteerTab:hover > #text {
+			color: var(--listItemHover, fuchsia);
+		}
+
+.tabSelected {
+	background-color: var(--light, fuchsia);
+	border-color: var(--listBorderRegular);
+	border-width: 1px;
+	border-bottom-width: 0px;
+	border-top-color: var(--active);
+}
+
+	.tabSelected:hover {
+		background-color: var(--active, fuchsia);
+	}

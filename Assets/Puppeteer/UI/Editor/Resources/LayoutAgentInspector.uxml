@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+	<engine:VisualElement class="horizontalGroup">
+		<engine:Image class="agentIcon" />
+		<engine:Button name ="openConfigurator" class="openButton" text="Open Configurator" tooltip="Open the Configurator for the current agent." />
+		<engine:Button name ="openVisualiser" class="openButton" text="Open PlanVisualiser" tooltip="Open the PlanVisualiser for the currently selected agent." />
+	</engine:VisualElement>
+	<engine:VisualElement class="agentInspectorDivider" />
+	<engine:VisualElement name="archetypeSelectorContainer">
+		<pui:ArchetypeSelectorField name="archetypeSelector" label="Used Archetype"
+																tooltip="Defines which archetype this agent will use and therefore which goals, actions, and sensors this agent will run." />
+	</engine:VisualElement>
+	<engine:Label class="contentHeaderText" text="Working Memory" />
+	<engine:VisualElement name="workingMemoryContainer" class="inspectorWorldStateItem rounded"
+												tooltip="The working memory defines what the agent currently knows about its environment." />
+	<engine:Label class="contentHeaderText" text="Current Plan" />
+	<engine:VisualElement name="planContainer" class="inspectorWorldStateItem rounded" />
+</engine:UXML>

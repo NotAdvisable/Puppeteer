@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+	<engine:ScrollView name="configuratorContent">
+		<engine:TextField name="displayName" class="noLeftMargin" label="Display Name" max-length="30" 
+											tooltip="Choose a descriptive name that will be displayed to represent this action." />
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<pui:ExecutableActionField name="executableAction" label="Executable Action" 
+															 tooltip="Refers to the action that will be executed. Any action that inherits from PuppeteerExecutableAction may be chosen."/>
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<engine:VisualElement name="preconditionCreator">
+			<engine:Label class="contentHeaderText" text="Preconditions" />
+			<engine:Button name ="addPreconditionButton" class="addButton" text="+" tooltip="Add new precondition." />
+		</engine:VisualElement>
+		<engine:VisualElement name="preconditions" />
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<engine:VisualElement name="effectCreator">
+			<engine:Label class="contentHeaderText" text="Effects" />
+			<engine:Button name ="addEffectButton" class="addButton" text="+" tooltip="Add new effect." />
+		</engine:VisualElement>
+		<engine:VisualElement name="effects" />
+		<engine:VisualElement name="divider" class="horizontalDividerWithSpace" />
+		<editor:FloatField name="baseUtility" label="Utility" tooltip="Unlike goals, actions only have a single, fixed utility value." />
+	</engine:ScrollView>
+</engine:UXML>

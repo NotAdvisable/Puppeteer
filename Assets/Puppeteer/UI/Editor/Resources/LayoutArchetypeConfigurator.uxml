@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+	<engine:TextField name="displayName" class="noLeftMargin" label="Display Name" max-length="20" 
+										tooltip="Choose a descriptive name that will be displayed to represent this archetype." />
+	<engine:VisualElement class="horizontalDividerWithSpace" />
+	<engine:VisualElement class="horizontalGroup">
+		<engine:VisualElement name="goals" class="archetypeContent verticalGroup">
+			<engine:Label text="Goals" class="contentHeaderText" />
+			<engine:Button name="goalAddButton" class="addButton"  text="+" tooltip="Add goal."/>
+			<engine:ScrollView name="goalScrollView" class="scrollView archetypeScroller rounded" />
+		</engine:VisualElement>
+		<engine:VisualElement name="actions" class="archetypeContent verticalGroup">
+			<engine:Label text="Actions" class="contentHeaderText" />
+			<engine:Button name="actionAddButton" class="addButton"  text="+" tooltip="Add action."/>
+			<engine:ScrollView name="actionScrollView" class="scrollView archetypeScroller rounded" />
+		</engine:VisualElement>
+		<engine:VisualElement name="sensors" class="archetypeContent verticalGroup">
+			<engine:Label text="Sensors" class="contentHeaderText" />
+			<engine:Button name="sensorAddButton" class="addButton"  text="+" tooltip="Add sensor."/>
+			<engine:ScrollView name="sensorScrollView"  class="scrollView archetypeScroller rounded" />
+		</engine:VisualElement>
+	</engine:VisualElement>
+</engine:UXML>

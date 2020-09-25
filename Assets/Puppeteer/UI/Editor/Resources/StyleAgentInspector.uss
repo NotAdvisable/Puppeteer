@@ -1,0 +1,97 @@
+﻿.rounded {
+	border-radius: 5px;
+}
+
+.agentInspectorDivider {
+	flex-grow: 0;
+	height: 2px;
+	width: 100%;
+	margin: 5px 3px 10px 3px;
+	align-self: center;
+	background-color: var(--dark, fuchsia);
+}
+
+.agentIcon {
+	flex-shrink: 0;
+	-unity-background-scale-mode: scale-to-fit;
+	min-width: 32px;
+	min-height: 32px;
+	align-self: center;
+	margin: 5px 3px 5px 3px;
+}
+
+#archetypeSelector {
+	padding-bottom: 5px;
+}
+
+.inspectorWorldStateItem {
+	padding: 9px;
+	background-color: var(--dark, fuchsia);
+	border-color: var(--border);
+	border-width: 2px;
+	margin: 0px 3px 10px 3px;
+}
+
+.worldStateItem > * {
+	margin: 3px 0px 3px 0px;
+}
+
+.horizontalGroup {
+	flex-direction: row;
+	flex-grow: 1;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.contentHeaderText {
+	margin: 0px 3px 10px 3px;
+	flex-shrink: 0;
+	max-width: 100px;
+}
+
+.noLeftMargin {
+	margin-left: 0px;
+}
+
+.selectedWorldStateItem {
+	border-color: var(--active);
+}
+
+.headerText {
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	flex-shrink: 0;
+}
+
+.workingMemoryItem {
+	justify-content: space-between;
+}
+
+.workingMemoryKey {
+	margin-left: 10px;
+}
+
+.workingMemoryValue {
+	margin-right: 10px;
+}
+
+.planItem > Image {
+	width: 16px;
+	height: 14px;
+	padding-right: 2px;
+}
+
+.openButton {
+	flex: 1;
+	min-height: 24px;
+	align-self: center;
+}
+
+.activeAction {
+	color: var(--highlight, fuchsia);
+}
+
+.activeGoal {
+	color: var(--highlight, fuchsia);
+}

@@ -1,0 +1,60 @@
+﻿.leftPanel {
+	flex-direction: row;
+	min-width: 283px;
+	background-color: var(--light, fuchsia);
+}
+
+.listItem {
+	width: auto;
+	height: 30px;
+	justify-content: center;
+	padding-left: 10px;
+	border-bottom-width: 1px;
+	border-color: var(--listBorderRegular);
+}
+
+.scrollViewHeaderIcon {
+	flex-shrink: 0;
+	-unity-background-scale-mode: scale-to-fit;
+	width: 32px;
+	height: 32px;
+	margin: 3px 5px 3px 10px;
+}
+
+
+.headerText {
+	font-size: 16px;
+	margin: 10px 10px 10px 0px;
+	flex-shrink: 0;
+}
+
+.listItem:hover {
+	background-color: var(--hover, fuchsia);
+}
+
+	.listItem:hover .listItemText {
+		color: var(--listItemHover, fuchsia);
+	}
+
+.selected {
+	background-color: var(--dark, fuchsia);
+	border-color: var(--active);
+}
+
+	.selected:hover {
+		background-color: var(--active, fuchsia);
+	}
+
+#headerGroup {
+	min-width: 100%
+}
+
+#addButton {
+	align-self: flex-end;
+	position: absolute;
+	right: 10px;
+	top: 9px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+	font-size: 16px;
+}

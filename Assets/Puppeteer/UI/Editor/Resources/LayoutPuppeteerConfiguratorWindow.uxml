@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xmlns:pui="Puppeteer.UI"
+		xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+
+	<engine:VisualElement class="root">
+		<pui:TabView class="puppeteerTabView">
+			<engine:Image class="textLogo"/>
+		</pui:TabView>
+		<editor:VisualSplitter class ="visualSplitter">
+			<engine:VisualElement class="leftPanel">
+			</engine:VisualElement>
+			<engine:VisualElement class="rightPanel">
+			</engine:VisualElement>
+		</editor:VisualSplitter>
+		<engine:VisualElement class ="footer darkestBackground">
+			<engine:TextElement name="version"/>
+		</engine:VisualElement>
+	</engine:VisualElement>
+</engine:UXML>

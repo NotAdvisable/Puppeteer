@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:engine="UnityEngine.UIElements"
+		xmlns:editor="UnityEditor.UIElements"
+		xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+	<engine:VisualElement class="verticalGroup">
+		<engine:VisualElement name="headerGroup">
+			<engine:VisualElement class="horizontalGroup">
+				<engine:Image class="scrollViewHeaderIcon" />
+				<engine:TextElement name="scrollViewHeader" class="headerText" text="Lorem Ipsum" />
+			</engine:VisualElement>
+			<engine:Button class="addButton" name="addButton" text="+" />
+		</engine:VisualElement>
+		<engine:ScrollView class="scrollView" />
+	</engine:VisualElement>
+	<engine:VisualElement class="panelDragger" />
+</engine:UXML>

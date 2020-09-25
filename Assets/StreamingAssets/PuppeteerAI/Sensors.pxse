@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ArrayOfSensorDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SensorDescription>
+    <DisplayName>EnoughMushrooms</DisplayName>
+    <GUID>7547fc84-724a-4d9d-88ba-6a2ac0831e4c</GUID>
+    <ShouldBeTicked>false</ShouldBeTicked>
+    <ExecutionOrder>0</ExecutionOrder>
+    <ManagedWorldState>HasEnoughMushrooms</ManagedWorldState>
+    <TickRate>50</TickRate>
+    <ExecuteableSensorTypeName>AIEnoughMushroomsSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</ExecuteableSensorTypeName>
+  </SensorDescription>
+  <SensorDescription>
+    <DisplayName>EnoughFish</DisplayName>
+    <GUID>bd30957c-6ac2-407a-857b-4939f163491e</GUID>
+    <ShouldBeTicked>true</ShouldBeTicked>
+    <ExecutionOrder>0</ExecutionOrder>
+    <ManagedWorldState>HasEnoughFish</ManagedWorldState>
+    <TickRate>50</TickRate>
+    <ExecuteableSensorTypeName>AIEnoughFishSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</ExecuteableSensorTypeName>
+  </SensorDescription>
+  <SensorDescription>
+    <DisplayName>ObserveFishingLocation</DisplayName>
+    <GUID>56b5db2c-ce56-482a-b136-dcdb6f5bc49e</GUID>
+    <ShouldBeTicked>true</ShouldBeTicked>
+    <ExecutionOrder>0</ExecutionOrder>
+    <ManagedWorldState>TargetPosition</ManagedWorldState>
+    <TickRate>500</TickRate>
+    <ExecuteableSensorTypeName>AIObserveFishingLocationSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</ExecuteableSensorTypeName>
+  </SensorDescription>
+  <SensorDescription>
+    <DisplayName>FishAvailable</DisplayName>
+    <GUID>2347f1e4-1d88-4ebb-889d-030dbf564260</GUID>
+    <ShouldBeTicked>true</ShouldBeTicked>
+    <ExecutionOrder>0</ExecutionOrder>
+    <ManagedWorldState>FishAvailable</ManagedWorldState>
+    <TickRate>50</TickRate>
+    <ExecuteableSensorTypeName>AIFishAvailableSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</ExecuteableSensorTypeName>
+  </SensorDescription>
+  <SensorDescription>
+    <DisplayName>ObserveExplosions</DisplayName>
+    <GUID>59fdda0e-9a55-473e-a5f7-e87b437a1b5e</GUID>
+    <ShouldBeTicked>true</ShouldBeTicked>
+    <ExecutionOrder>0</ExecutionOrder>
+    <ManagedWorldState>IsInDanger</ManagedWorldState>
+    <TickRate>10</TickRate>
+    <ExecuteableSensorTypeName>AIObserveExplosionsSensor, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</ExecuteableSensorTypeName>
+  </SensorDescription>
+</ArrayOfSensorDescription>

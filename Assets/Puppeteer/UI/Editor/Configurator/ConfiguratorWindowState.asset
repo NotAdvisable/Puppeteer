@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ccc3634ebacd843a0c9c52619b55f8, type: 3}
+  m_Name: ConfiguratorWindowState
+  m_EditorClassIdentifier: 
+  LastOpenedAction:
+    m_SerialisedGuid: 00000000-0000-0000-0000-000000000000
+  LastOpenedAgentObjectID: -1526
+  LastOpenedArchetype:
+    m_SerialisedGuid: 287ad600-0e96-4900-9c84-19758a2483b4
+  LastOpenedGoal:
+    m_SerialisedGuid: ed612bf0-c3d7-4224-93ce-f587cb0db6b2
+  LastOpenedSensor:
+    m_SerialisedGuid: 7547fc84-724a-4d9d-88ba-6a2ac0831e4c
+  TabTypeName: Puppeteer.UI.GoalView, Puppeteer.UI, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null

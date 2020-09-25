@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ArrayOfGoalDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <GoalDescription>
+    <DisplayName>GatherMushrooms</DisplayName>
+    <GUID>ed612bf0-c3d7-4224-93ce-f587cb0db6b2</GUID>
+    <GoalParts>
+      <WorldStateDescription>
+        <Key>HasEnoughMushrooms</Key>
+        <Value xsi:type="xsd:boolean">true</Value>
+      </WorldStateDescription>
+    </GoalParts>
+    <BaseUtility>15</BaseUtility>
+    <UtilityParts>
+      <UtilityDescription>
+        <UtilityOperator>PLUS_EQUALS</UtilityOperator>
+        <UtilityCurve>
+          <keys>
+            <Keyframe>
+              <time>0</time>
+              <value>0</value>
+              <inTangent>0</inTangent>
+              <outTangent>1</outTangent>
+              <inWeight>0</inWeight>
+              <outWeight>0</outWeight>
+              <weightedMode>None</weightedMode>
+            </Keyframe>
+            <Keyframe>
+              <time>1</time>
+              <value>1</value>
+              <inTangent>1</inTangent>
+              <outTangent>0</outTangent>
+              <inWeight>0</inWeight>
+              <outWeight>0</outWeight>
+              <weightedMode>None</weightedMode>
+            </Keyframe>
+          </keys>
+          <preWrapMode>ClampForever</preWrapMode>
+          <postWrapMode>ClampForever</postWrapMode>
+        </UtilityCurve>
+        <WorldStateName>NeedForMushrooms</WorldStateName>
+        <CurveMultiplier>10</CurveMultiplier>
+      </UtilityDescription>
+    </UtilityParts>
+  </GoalDescription>
+  <GoalDescription>
+    <DisplayName>GatherFish</DisplayName>
+    <GUID>7d04f039-c025-4530-8035-dcc6702d73ba</GUID>
+    <GoalParts>
+      <WorldStateDescription>
+        <Key>HasEnoughFish</Key>
+        <Value xsi:type="xsd:boolean">true</Value>
+      </WorldStateDescription>
+    </GoalParts>
+    <BaseUtility>20</BaseUtility>
+    <UtilityParts />
+  </GoalDescription>
+  <GoalDescription>
+    <DisplayName>Fishing</DisplayName>
+    <GUID>09d1e515-3d8d-407b-ac1c-4d650e2b461a</GUID>
+    <GoalParts>
+      <WorldStateDescription>
+        <Key>ObtainFishFromRiver</Key>
+        <Value xsi:type="xsd:boolean">true</Value>
+      </WorldStateDescription>
+    </GoalParts>
+    <BaseUtility>10</BaseUtility>
+    <UtilityParts />
+  </GoalDescription>
+  <GoalDescription>
+    <DisplayName>Flee</DisplayName>
+    <GUID>64604199-67e1-4d6f-8a3c-c6257aa885f3</GUID>
+    <GoalParts>
+      <WorldStateDescription>
+        <Key>IsInDanger</Key>
+        <Value xsi:type="xsd:boolean">false</Value>
+      </WorldStateDescription>
+    </GoalParts>
+    <BaseUtility>500</BaseUtility>
+    <UtilityParts />
+  </GoalDescription>
+  <GoalDescription>
+    <DisplayName>DoNothing</DisplayName>
+    <GUID>198dab7f-059c-4ed5-bdd6-e142e929ca44</GUID>
+    <GoalParts>
+      <WorldStateDescription>
+        <Key>DoNothing</Key>
+        <Value xsi:type="xsd:boolean">true</Value>
+      </WorldStateDescription>
+    </GoalParts>
+    <BaseUtility>5</BaseUtility>
+    <UtilityParts />
+  </GoalDescription>
+</ArrayOfGoalDescription>
